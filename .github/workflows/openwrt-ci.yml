@@ -81,8 +81,8 @@ jobs:
           # 编译x64固件:
           cat >> .config <<EOF
           CONFIG_TARGET_x86=y
+          CONFIG_TARGET_i386=y
           CONFIG_TARGET_x86_Generic=y
-          CONFIG_TARGET_x86_Generic_Generic=y
           EOF
           # 固件压缩:
           cat >> .config <<EOF
